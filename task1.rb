@@ -14,7 +14,7 @@ def totalsum(n,res)
 	p=(0...n.length).to_a
         q=p.combination(2).to_a                                                      
         r= q.select{ |i, j| n[i] + n[j]==res}
-   return r.i
+   return r[0]
  end
 
 
